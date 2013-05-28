@@ -1,0 +1,185 @@
+/*
+ default control setting
+-------------------------------------*/
+button, imagebutton, checkbox{
+    cursor:pointer;
+}
+
+listitem{
+    margin:0px;
+    padding:0px;
+}
+
+
+/*
+ 서브 메뉴 페널, 
+ 검색영역이나 친구 추가영역 배경
+-------------------------------------*/
+.subMenuPanel{
+    height:27px;
+    padding:9px 5px 9px 5px;
+    -nx-image-border-width:2px;
+    -nx-background-border-image:url('chrome://images/talk/search_bg.png');
+    margin-top:-1px;
+}
+
+
+.searchBox{
+    -nx-background-border-image:url('chrome://images/talk/input_search.png');
+    -nx-image-border-width:12px;
+    padding-left:7px;
+    padding-right:4px;
+}
+
+#txtSearch{
+    margin-left:3px;
+    margin-right:3px;
+    padding:2px;
+    font-size:13px;
+}
+
+#txtSearch label{
+    color:#888;
+    font-size:13px;
+}
+
+
+/*
+ searched buddy
+-------------------------------------*/
+.searchedBuddyPicutre{
+    width:62px;
+    height:62px;
+    background-color:white;
+    -nx-background-border-image:url('chrome://images/common/thumbnail_m.png');
+    -nx-image-border-width:7px;
+}
+
+.searchedBuddyName{
+    font-size:18px;
+    font-weight:bold;
+    text-shadow:0px 1px white;
+}
+
+.searchedBuddyStatusMsg{
+    margin-top:9px;
+    font-size:12px;
+    color:#999;
+}
+
+/*
+ list items
+-------------------------------------*/
+#listBuddies,#listBuddy{
+    background-color:#F4F4F4;
+}
+
+.itemContainer{
+    padding-bottom:-1px;
+}
+
+listitem{
+    -nx-background-button-image:url('chrome://images/common/list_bg_nomal.png');
+    height:64px;
+}
+
+listitem:selected{
+    -nx-background-button-image:url('chrome://images/common/list_bg_pressed.png');
+    color:#333;
+}
+
+listitem:hover{
+    -nx-background-button-image:url('chrome://images/common/list_bg_over.png');
+    color:#333;
+}
+
+.itemHeadingBox{
+    height:27px;
+    -nx-background-button-image:url('chrome://images/common/list_heading_bg_nomal.png');
+    padding-left:9px;
+    margin-top:-2px;
+}
+
+.itemHeadingBox:selected{
+    -nx-background-button-image:url('chrome://images/common/list_heading_bg_pressed.png');
+}
+
+.itemHeadingBox:hover{
+    -nx-background-button-image:url('chrome://images/common/list_heading_bg_over.png');
+}
+
+
+.itemHeading{
+    -nx-button-skin:url('chrome://images/talk/check_group_show.png');
+    -nx-button-left-margin:10px;
+    cursor:pointer;
+    padding-right:5px;
+}
+
+.itemHeading label{
+    font-size:12px;
+    color:#737C88;
+}
+
+
+/* 
+ profile
+-------------------------------------------*/
+.hbProfile{
+    width:42px;
+    height:42px;
+    margin:0px 10px 0px 9px;
+    cursor:pointer;
+    -nx-background-border-image:url('chrome://images/common/thumbnail_s01.png');
+    -nx-image-border-width:5px;
+}
+
+.memberCount{
+    color:#9EA7B5;
+    margin-right:5px;
+    font-size:10px;
+    /*font-family:'Tahoma';*/
+    font-family:'Apple LiGothic Mediu';
+    text-shadow:0px 1px white;
+}
+
+.nickname{
+    color:#333;
+    -nx-selection-text:#333;
+    -nx-not-selected-text:#b6b6bd;
+    font-size:13px;
+    text-shadow:0px 1px white;
+}
+
+.members{
+    color:#A2A9B3;
+    font-size:13px;
+}
+
+.talkToday{
+    color:#A2A9B3;
+    font-size:12px;
+    margin-top:2px;
+}
+
+.statusMessage{
+    min-height:24px;
+    height:24px;
+}
+
+.error_message{
+    font-size:13px;
+	color:#999;
+}
+
+.emptyTitle{
+    font-size:18px;
+    color:#44505F;
+    margin:12px 0px 10px 0px;
+}
+
+.emptyDesc{
+    font-size:12px;
+    color:#737373;
+    line-height:120%;
+}

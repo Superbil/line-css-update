@@ -1,0 +1,250 @@
+/* 
+ default font setting
+-------------------------------------------*/
+@font-face{
+    -nx-font-face:'defaultFontFamily';
+    font-family:'Apple LiGothic Mediu';
+}
+
+@font-face{
+    -nx-font-face:'defaultFontFamily';
+    font-family:'Apple LiGothic Mediu';
+    unicode-range:U+00-127;
+}
+
+
+/* 
+ default Japanese font setting
+-------------------------------------------*/
+@font-face{
+    -nx-font-face:'defaultJapFontFamily';
+    font-family:'Apple LiGothic Mediu';
+}
+
+
+@font-face{
+    -nx-font-face:'defaultJapFontFamily';
+    font-family:'Apple LiGothic Mediu';
+    unicode-range:U+00-127;
+}
+
+/* 
+ default font setting
+-------------------------------------------*/
+label:lang(en-US),description:lang(en-US){
+    font-family:'Apple LiGothic Mediu';
+}
+
+label:lang(es),description:lang(es){
+    font-family:'Apple LiGothic Mediu';
+}
+
+label:lang(ko-KR),description:lang(ko-KR){
+    font-family:'Apple LiGothic Mediu';
+}
+
+label:lang(ja-JP),description:lang(ja-JP){
+    font-family:'Apple LiGothic Mediu';
+}
+
+label:lang(zh-CN),description:lang(zh-CN){
+    font-family:'Apple LiGothic Mediu';
+}
+
+label:lang(zh-TW),description:lang(zh-TW){
+    font-family:'Apple LiGothic Mediu';
+}
+
+description:link{
+    text-decoration:underline;
+}
+
+textbox:lang(en-US), textbox:lang(es){
+    font-family:'Apple LiGothic Mediu';
+    cursor:text;
+    font-size:12px;
+}
+
+textbox:lang(ko-KR){
+    font-family:'Apple LiGothic Mediu';
+    cursor:text;
+    font-size:12px;
+}
+
+textbox:lang(ja-JP){
+    font-family:'Apple LiGothic Mediu';
+    cursor:text;
+    font-size:12px;
+}
+
+textbox:lang(zh-CN){
+    font-family:'Apple LiGothic Mediu';
+    cursor:text;
+    font-size:12px;
+}
+
+textbox:lang(zh-TW){
+    font-family:'Apple LiGothic Mediu';
+    cursor:text;
+    font-size:12px;
+}
+
+
+
+listitem{
+    padding:0px;
+    marign:0px;
+}
+
+
+/* 
+ default
+-------------------------------------------*/
+button, imagebutton, radio, checkbox {
+    cursor:pointer;
+}
+
+deck{
+    margin:0px;
+    padding:0px;
+}
+
+
+listitem{
+    padding:0px;
+}
+
+menupopup {
+    background-color:white;
+}
+
+/* 
+ default style
+-------------------------------------------*/
+.text_length{
+    color:#BBB;
+    font-size:11px;
+}
+
+
+/* 
+ default buttons
+-------------------------------------------*/
+.btn_type1{
+    -nx-button-skin-border:9px;
+    -nx-button-skin:url('chrome://images/common/btn_type1.png');
+    padding:-4px -2px -5px -2px;
+    color:#333;
+    min-width:60px;
+}
+
+.btn_type1:hover{
+    color:#333;
+}
+
+.btn_type1 label:disabled{
+    color:#CCC;
+}
+
+.btn_type1:selected{
+    color:#FFF;
+}
+
+.btn_type1 label{
+    font-size:13px;
+}
+
+
+
+.btn_type2{
+    -nx-button-skin-border:12px;
+    -nx-button-skin:url('chrome://images/common/btn_type2.png');
+    padding:-7px -3px -7px -3px;
+    color:#333;
+    min-height:19px;
+}
+
+.btn_type2:hover{
+    color:#333;
+}
+
+.btn_type2:selected{
+    color:#FFF;
+}
+
+.btn_type2:disabled{
+    color:#CCC;
+}
+
+.btn_type2 label{
+    font-size:13px;
+}
+
+
+.btn_type3{
+    -nx-button-skin-border:4px;
+    -nx-button-skin:url('chrome://images/common/btn03.png');
+    padding:0px 4px 0px 4px;
+    color:#333;
+}
+
+.btn_type3:disabled{
+    color:#333;
+}
+
+.btn_type3 label{
+    font-size:12px;
+}
+
+
+.btn_type4{
+    -nx-button-skin-border:12px;
+    -nx-button-skin:url('chrome://images/common/btn_type2.png');
+    padding:-7px -3px -7px -3px;
+    color:#333;
+    min-height:19px;
+}
+
+.btn_type4:hover{
+    color:#FFF;
+}
+
+.btn_type4:disabled{
+    color:#CCC;
+}
+
+.btn_type4 label{
+    font-size:13px;
+}
+
+/* 
+ default window buttons
+-------------------------------------------*/
+.btn_window_close{
+    src:url('chrome://images/common/btn_close.png');
+}
+
+.btn_window_close:-nx-inactive-window{
+    src:url('chrome://images/common/btn_close_gray.png');
+}
+
+.btn_window_min{
+    src:url('chrome://images/common/btn_min.png');
+}
+
+.btn_window_min:-nx-inactive-window{
+    src:url('chrome://images/common/btn_min_gray.png');
+}
+
+.btn_window_max{
+    -nx-button-skin:url('chrome://images/common/btn_max.png');
+    -nx-focus-ring:false;
+}
+
+.btn_window_max:-nx-inactive-window{
+    -nx-button-skin:url('chrome://images/common/btn_max_gray.png');
+}
+
+.text_bold {
+    font-weight:bold;
+}

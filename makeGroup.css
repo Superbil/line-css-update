@@ -1,0 +1,139 @@
+label,description{
+    font-family:'Apple LiGothic Mediu';
+    font-size:9pt;
+}
+
+textbox{
+    font-family:'Apple LiGothic Mediu';
+    cursor:text;
+}
+
+
+listbox,deck{
+    margin:0px;
+}
+
+
+checkbox, imagebutton{
+    cursor:pointer;
+}
+
+
+/*
+ 루트 박스
+-------------------------------------*/
+.body{
+    background-color:#F8F9FA;
+}
+
+/*
+ 타이틀 박스
+-------------------------------------*/
+#hbTitle{
+    height:31px;
+    background-image:url('chrome://images/group/bg_teamlayer_top_01.png');
+}
+
+
+/*
+ 팀프로필 박스
+-------------------------------------*/
+#teamProfileBox{
+  padding:8px 8px 0px 8px;
+}
+
+/*
+ 프로필 이미지 보더
+-------------------------------------*/
+.teamProfile{
+    -nx-background-border-image:url('chrome://images/group/teampopup_frame.png');
+}
+
+
+/*
+ 서치 박스 영역
+-------------------------------------*/
+.textBox{
+    border:1px solid #C7CCD0;
+    height:19px;
+    padding:2px 6px 2px 6px;
+    background-color:white;
+}
+
+.textBox:focus{
+    border:1px solid #5AA409;
+}
+
+
+/*
+ 버디 목록
+-------------------------------------*/
+#buddyList{
+    border:1px solid #B0B4BC;
+    margin-left:8px;
+    margin-right:8px;
+}
+
+
+/*
+ 버디 목록 리스트 아이템 기본 스타일
+-------------------------------------*/
+#buddyList listitem{
+    border-bottom:1px solid #E9EBEE;
+    -nx-selected-color:#E9F6FD;
+    -nx-unfocused-selected-color:#E9F6FD;
+    -nx-selected-label-color:#333;
+    -nx-unfocued-selected-label-color:#333;
+    color:#333;
+    height:45px;
+    padding:0px 9px 0px 0px;
+}
+
+#buddyList listitem:selected{
+    background-color:#E9F6FD;
+    color:#333;
+}
+
+/* 
+ 프로필 이미지
+-------------------------------------------*/
+.hbProfile{
+    width:33px;
+    height:33px;
+    -nx-background-border-image:url('chrome://images/common/profile_frame.png');
+    margin-left:10px;
+    margin-right:7px;
+    cursor:pointer;
+}
+
+/* 
+ 상태 아이콘
+-------------------------------------------*/
+.statusIcon{
+    margin-left:31px;
+    margin-top:23px;
+    width:16px;
+    height:18px;
+}
+
+
+/* 
+ 친구 목록 내 체크박스
+-------------------------------------------*/
+#buddyList listitem checkbox{
+    margin-left:7px;
+    -nx-button-skin:url('chrome://images/talk/check_addbuddy.png');
+}
+
+
+
+/* 닉네임 클래스 
+-------------------------------------------*/
+.nickname{
+    -nx-selection-text:#45AF14;
+}
+
+.error_message{
+    font-size:13px;
+	color:#999;
+}

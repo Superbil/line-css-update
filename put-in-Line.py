@@ -16,11 +16,16 @@ def update_line_css(source, line_path):
         if __debug__:
             print "from: %s to %s" % (filename, line_css_path)
 
-        copyfile(filename, line_css_path + filename)
+        try:
+            copyfile(filename, line_css_path + filename)
+        except IOError as e:
+            print e
+            break
 
 def main():
     source = "./"
-    line = "/Applications/Line.app-"
+    line = "/Applications/Line.app"
+
     update_line_css(source, line)
 
 if __name__ == "__main__":

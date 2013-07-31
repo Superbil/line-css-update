@@ -11,6 +11,11 @@
   python put-in-Line.py
 #+END_SRC
 
+  if you install Line from App Store, you need sudo to run it
+#+BEGIN_SRC sh
+  sudo python put-in-Line.py
+#+END_SRC
+
 * About this
   css files is copy from [[http://iphone4.tw/forums/showthread.php?t=199501][教學 - Line更新後字體難看的解決方式 - by iPhone4.TW]]
 

@@ -19,7 +19,8 @@ def update_line_css(source, line_path):
         try:
             copyfile(filename, line_css_path + filename)
         except IOError as e:
-            print e
+            if __debug__:
+                print e
             break
 
 def main():

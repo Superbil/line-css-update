@@ -7,9 +7,9 @@ from glob import glob
 LINE_CSS_STRUCT = "%s/Contents/Resources/skin/mac/css/"
 
 
-def update_line_css(source, line_path):
+def update_line_css(source, line_app_path):
     "Update Line's CSS from source"
-    line_css_path = LINE_CSS_STRUCT % (line_path)
+    line_css_path = LINE_CSS_STRUCT % (line_app_path)
 
     if path.exists(line_css_path) is False:
         return
@@ -23,14 +23,14 @@ def update_line_css(source, line_path):
         except IOError as e:
             if __debug__:
                 print e
-            break
+            return 0
 
 
 def main():
     source = "./"
-    line = "/Applications/Line.app"
+    line_app = "/Applications/Line.app"
 
-    update_line_css(source, line)
+    update_line_css(source, line_app)
 
 if __name__ == "__main__":
     main()

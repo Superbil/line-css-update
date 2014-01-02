@@ -4,10 +4,12 @@ import os.path as path
 from shutil import copyfile
 from glob import glob
 
+LINE_CSS_STRUCT = "%s/Contents/Resources/skin/mac/css/"
+
 
 def update_line_css(source, line_path):
     "Update Line's CSS from source"
-    line_css_path = "%s/Contents/Resources/skin/mac/css/" % (line_path)
+    line_css_path = LINE_CSS_STRUCT % (line_path)
 
     if path.exists(line_css_path) is False:
         return
@@ -22,6 +24,7 @@ def update_line_css(source, line_path):
             if __debug__:
                 print e
             break
+
 
 def main():
     source = "./"

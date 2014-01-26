@@ -1,57 +1,24 @@
-label,description{
-    font-family:'Apple LiGothic Mediu';
-}
-
-.upradio1{
-    -nx-button-skin:url('chrome://images/tm/tm_like_layer_b_1.png');
-    -nx-button-skin-border:12px;
-}
-
-.upradio2{
-    -nx-button-skin:url('chrome://images/tm/tm_like_layer_b_2.png');
-    -nx-button-skin-border:12px;
-}
-
-.upradio3{
-    -nx-button-skin:url('chrome://images/tm/tm_like_layer_b_3.png');
-    -nx-button-skin-border:12px;
-}
-
-.upradio1 image{
-    margin:3px 6px 0px 11px;
-}
-
-.upradio2 image{
-    margin:5px 6px 0px 6px;
-}
-
-.upradio3 image{
-    margin:5px 8px 0px 6px;
-}
-
-.dnradio1{
-    -nx-button-skin:url('chrome://images/tm/tm_like_layer_t_1.png');
-    -nx-button-skin-border:12px;
+﻿.dnradio1{
+    -nx-button-skin:url('chrome://images/timeline/post/post_like_layer_icon_01.png');
 }
 
 .dnradio2{
-    -nx-button-skin:url('chrome://images/tm/tm_like_layer_t_2.png');
-    -nx-button-skin-border:12px;
+    -nx-button-skin:url('chrome://images/timeline/post/post_like_layer_icon_02.png');
 }
 
 .dnradio3{
-    -nx-button-skin:url('chrome://images/tm/tm_like_layer_t_3.png');
-    -nx-button-skin-border:12px;
+    -nx-button-skin:url('chrome://images/timeline/post/post_like_layer_icon_03.png');    
 }
 
-.dnradio1 image{
-    margin:-11px 6px 0px 11px;
+.dnradio4{
+    -nx-button-skin:url('chrome://images/timeline/post/post_like_layer_icon_04.png');    
 }
 
-.dnradio2 image{
-    margin:-8px 6px 0px 6px;
+.dnradio5{
+    -nx-button-skin:url('chrome://images/timeline/post/post_like_layer_icon_05.png');    
 }
 
-.dnradio3 image{
-    margin:-8px 8px 0px 6px;
+.dnradio6{
+    -nx-button-skin:url('chrome://images/timeline/post/post_like_layer_icon_06.png');    
 }
+

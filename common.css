@@ -1,4 +1,4 @@
-/* 
+﻿/*
  default font setting
 -------------------------------------------*/
 @font-face{
@@ -12,83 +12,97 @@
     unicode-range:U+00-127;
 }
 
-
-/* 
+/*
  default Japanese font setting
 -------------------------------------------*/
 @font-face{
     -nx-font-face:'defaultJapFontFamily';
-    font-family:'Apple LiGothic Mediu';
+    font-family:'Hiragino Kaku Gothic Pro W3','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro';
 }
 
 
+/*
+ default Korean font setting
+-------------------------------------------*/
 @font-face{
-    -nx-font-face:'defaultJapFontFamily';
-    font-family:'Apple LiGothic Mediu';
-    unicode-range:U+00-127;
+    -nx-font-face:'defaultKorFontFamily';
+    font-family:'Apple SD 산돌고딕 Neo 일반체','Apple SD Gothic Neo Regular','AppleGothic';
 }
 
-/* 
+/*
  default font setting
 -------------------------------------------*/
 label:lang(en-US),description:lang(en-US){
-    font-family:'Apple LiGothic Mediu';
+    font-family:'defaultFontFamily';
 }
 
 label:lang(es),description:lang(es){
-    font-family:'Apple LiGothic Mediu';
+    font-family:'defaultFontFamily';
+}
+
+label:lang(tr),description:lang(tr){
+    font-family:'defaultFontFamily';
 }
 
 label:lang(ko-KR),description:lang(ko-KR){
-    font-family:'Apple LiGothic Mediu';
+    font-family:'defaultKorFontFamily';
 }
 
 label:lang(ja-JP),description:lang(ja-JP){
-    font-family:'Apple LiGothic Mediu';
+    font-family:'defaultJapFontFamily';
 }
 
 label:lang(zh-CN),description:lang(zh-CN){
-    font-family:'Apple LiGothic Mediu';
+    font-family:'defaultFontFamily';
 }
 
 label:lang(zh-TW),description:lang(zh-TW){
-    font-family:'Apple LiGothic Mediu';
+    font-family:'defaultFontFamily';
+}
+
+label:lang(th),description:lang(th){
+    font-family:'defaultFontFamily';
 }
 
 description:link{
     text-decoration:underline;
 }
 
-textbox:lang(en-US), textbox:lang(es){
-    font-family:'Apple LiGothic Mediu';
+textbox:lang(en-US), textbox:lang(es), textbox:lang(tr){
+    font-family:'Apple Gothic','AppleGothic';
     cursor:text;
     font-size:12px;
 }
 
 textbox:lang(ko-KR){
-    font-family:'Apple LiGothic Mediu';
+    font-family:'Apple SD 산돌고딕 Neo 일반체','Apple SD Gothic Neo Regular','AppleGothic';
     cursor:text;
     font-size:12px;
 }
 
 textbox:lang(ja-JP){
-    font-family:'Apple LiGothic Mediu';
+    font-family:'Hiragino Kaku Gothic Pro W3','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro';
     cursor:text;
     font-size:12px;
 }
 
 textbox:lang(zh-CN){
-    font-family:'Apple LiGothic Mediu';
+    font-family:'Apple Gothic','AppleGothic';
     cursor:text;
     font-size:12px;
 }
 
 textbox:lang(zh-TW){
-    font-family:'Apple LiGothic Mediu';
+    font-family:'Apple Gothic','AppleGothic';
     cursor:text;
     font-size:12px;
 }
 
+textbox:lang(th){
+    font-family:'Apple Gothic','AppleGothic';
+    cursor:text;
+    font-size:12px;
+}
 
 
 listitem{
@@ -97,7 +111,7 @@ listitem{
 }
 
 
-/* 
+/*
  default
 -------------------------------------------*/
 button, imagebutton, radio, checkbox {
@@ -118,7 +132,7 @@ menupopup {
     background-color:white;
 }
 
-/* 
+/*
  default style
 -------------------------------------------*/
 .text_length{
@@ -127,7 +141,7 @@ menupopup {
 }
 
 
-/* 
+/*
  default buttons
 -------------------------------------------*/
 .btn_type1{
@@ -217,7 +231,7 @@ menupopup {
     font-size:13px;
 }
 
-/* 
+/*
  default window buttons
 -------------------------------------------*/
 .btn_window_close{
@@ -245,6 +259,185 @@ menupopup {
     -nx-button-skin:url('chrome://images/common/btn_max_gray.png');
 }
 
+.mac_frame_closebtn_a{
+    src:url('chrome://images/mac/mac_frame_closebtn_a.png');
+}
+
+.mac_frame_closebtn_a:-nx-inactive-window{
+    src:url('chrome://images/mac/mac_frame_closebtn_a_disabled.png');
+}
+
+.mac_frame_closebtn_b{
+    src:url('chrome://images/mac/mac_frame_closebtn_b.png');
+}
+
+.mac_frame_closebtn_b:-nx-inactive-window{
+    src:url('chrome://images/mac/mac_frame_closebtn_b_disabled.png');
+}
+
+.mac_frame_expandbtn_a{
+    -nx-button-skin:url('chrome://images/mac/mac_frame_expandbtn_a.png');
+    -nx-focus-ring:false;
+}
+
+.mac_frame_expandbtn_a:-nx-inactive-window{
+    -nx-button-skin:url('chrome://images/mac/mac_frame_expandbtn_a_disabled.png');
+}
+
+.mac_frame_minbtn_a{
+    src:url('chrome://images/mac/mac_frame_minbtn_a.png');
+}
+
+.mac_frame_minbtn_a:-nx-inactive-window{
+    src:url('chrome://images/mac/mac_frame_minbtn_a_disabled.png');
+}
+
+.mac_frame_minbtn_b{
+    src:url('chrome://images/mac/mac_frame_minbtn_b.png');
+}
+
+.mac_frame_minbtn_b:-nx-inactive-window{
+    src:url('chrome://images/mac/mac_frame_minbtn_b_disabled.png');
+}
+
 .text_bold {
     font-weight:bold;
+}
+
+
+.common_btn_type_a_green{
+    -nx-button-skin-border:4px;
+    -nx-button-skin:url('chrome://images/common/common_btn_a_green.png');
+    -nx-button-pressed-text-color:#FFFFFF;
+    min-width:68px;
+    height:24px;
+    padding:0px 7px 0px 7px;
+}
+
+.common_btn_type_a_green label{
+    color:#FFFFFF;
+    font-weight:bold;
+    margin-top:2px;
+}
+
+.common_btn_type_a_green label:hover{
+    color:#FFFFFF;
+}
+
+.common_btn_type_a_green label:disabled{
+    color:#ECF9EA;
+}
+
+.common_btn_type_a_white{
+    -nx-button-skin-border:4px;
+    -nx-button-skin:url('chrome://images/common/common_btn_a_white.png');
+    -nx-button-pressed-text-color:#666666;
+    min-width:68px;
+    height:24px;
+    padding:0px 7px 0px 7px;
+}
+
+.common_btn_type_a_white label{
+    color:#666666;
+    font-weight:bold;
+    margin-top:2px;
+}
+
+.common_btn_type_a_white label:hover{
+    color:#666666;
+}
+
+.common_btn_type_a_white label:disabled{
+    color:#CACACA;
+}
+
+
+.common_btn_type_b{
+    -nx-button-skin-border:4px;
+    -nx-button-skin:url('chrome://images/common/common_btn_b.png');
+    -nx-button-pressed-text-color:#AAAAAA;
+    width:84px;
+    height:21px;
+}
+
+.common_btn_type_b label{
+    color:#6c6c6c;
+    font-weight:bold;
+    margin-top:2px;
+}
+
+.common_btn_type_b label:hover{
+    color:#6c6c6c;
+}
+
+.common_btn_type_b label:disabled{
+    color:#B2B2B2;
+}
+
+.common_popup_a_titlebar{
+    height:38px;
+    -nx-background-border-image:url('chrome://images/common_popup/common_popup_a_titlebar.png');
+    -nx-image-border-width:0px;
+}
+
+.common_popup_a_titletext{
+    font-weight:bold;
+    color:#FFFFFF;
+    margin-top:11px
+}
+
+.common_popup_a_titletext:lang(ko-KR){
+    margin-top:13px;
+}
+.common_popup_a_titletext:lang(zh-CN){
+    margin-top:13px;
+}
+.common_popup_a_titletext:lang(zh-TW){
+    margin-top:13px;
+}
+.common_popup_a_titletext:lang(ja-JP){
+    margin-top:12px;
+}
+
+
+.common_popup_b_titlebar{
+    height:36px;
+    -nx-background-border-image:url('chrome://images/common_popup/common_popup_b_titlebar.png');
+    -nx-image-border-width:0px;
+}
+
+.common_popup_b_titletext{
+    color:#4A515A;
+    font-size:12px;
+    font-weight:bold;
+    margin:10px 0px 0px 14px;
+}
+
+.common_popup_b_titletext:lang(ko-KR){
+    margin:12px 0px 0px 14px;
+}
+.common_popup_b_titletext:lang(zh-CN){
+    margin:12px 0px 0px 14px;
+}
+.common_popup_b_titletext:lang(zh-TW){
+    margin:12px 0px 0px 14px;
+}
+.common_popup_b_titletext:lang(ja-JP){
+    margin:11px 0px 0px 14px;
+}
+
+
+
+.frame_box{
+    -nx-background-border-image:url('chrome://images/common/frame_box.png');
+    -nx-image-border-width:20px;
+    padding:3px;
+    margin:-2px;
+}
+
+.bottom_footer{
+    height:5px
+    background-image: url('chrome://images/common/frame_btm.png');
+    background-repeat:repeat-x;
+    margin-bottom:-1px
 }

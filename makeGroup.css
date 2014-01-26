@@ -1,10 +1,10 @@
-label,description{
-    font-family:'Apple LiGothic Mediu';
+﻿label,description{
+    font-family:'나눔고딕','NanumGothic';
     font-size:9pt;
 }
 
 textbox{
-    font-family:'Apple LiGothic Mediu';
+    font-family:'Apple Gothic','나눔고딕','NanumGothic';
     cursor:text;
 }
 
@@ -131,9 +131,4 @@ checkbox, imagebutton{
 -------------------------------------------*/
 .nickname{
     -nx-selection-text:#45AF14;
-}
-
-.error_message{
-    font-size:13px;
-	color:#999;
 }
